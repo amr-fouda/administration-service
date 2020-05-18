@@ -7,7 +7,7 @@ import org.fouda.administration.entities.UserEntity;
 import java.util.function.BiPredicate;
 
 public class UserCompareUtil {
-    public final static BiPredicate<UserEntity, UserDto> IS_SAME_USER = UserCompareUtil::isSameUser;
+    public static final BiPredicate<UserEntity, UserDto> IS_SAME_USER = UserCompareUtil::isSameUser;
 
     private UserCompareUtil() {
 

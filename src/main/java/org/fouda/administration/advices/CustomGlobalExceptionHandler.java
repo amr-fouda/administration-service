@@ -37,7 +37,7 @@ public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler
     }
 
     @ExceptionHandler(UserNotFoundException.class)
-    public ResponseEntity<Object> handleUserNotFoundException() throws Exception {
+    public ResponseEntity<Object> handleUserNotFoundException() {
         return buildResponse(HttpStatus.NOT_FOUND);
     }
 

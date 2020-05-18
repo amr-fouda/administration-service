@@ -37,7 +37,7 @@ public class UserController {
     }
 
     @GetMapping(value = "/users/", produces = MediaType.APPLICATION_JSON_VALUE)
-    public CollectionModel<?> getUsers(@RequestParam(required = false, defaultValue = "0") final Integer pageNumber) {
+    public CollectionModel<EntityModel<UserDto>> getUsers(@RequestParam(required = false, defaultValue = "0") final Integer pageNumber) {
         log.info("Received get users request with page Number : {}", pageNumber);
         return CollectionModel.of(facade.getUsers(pageNumber).stream().map(this::buildUserEntityModel).collect(Collectors.toList()));
     }

@@ -8,9 +8,9 @@ import java.util.function.Function;
 
 
 public class UserBuilderUtil {
-    public final static Function<UserEntity, UserDto> ENTITY_TO_DTO = UserBuilderUtil::buildUserDto;
-    public final static Function<UserDto, UserEntity> DTO_TO_ENTITY = UserBuilderUtil::buildUserEntity;
-    public final static BiConsumer<UserEntity, UserDto> COPY_DTO_TO_ENTITY = UserBuilderUtil::copyUserData;
+    public static final Function<UserEntity, UserDto> ENTITY_TO_DTO = UserBuilderUtil::buildUserDto;
+    public static final Function<UserDto, UserEntity> DTO_TO_ENTITY = UserBuilderUtil::buildUserEntity;
+    public static final BiConsumer<UserEntity, UserDto> COPY_DTO_TO_ENTITY = UserBuilderUtil::copyUserData;
 
     private UserBuilderUtil() {
     }

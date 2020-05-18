@@ -22,8 +22,8 @@ import static org.fouda.administration.utils.UserBuilderUtil.*;
 @Transactional
 @RequiredArgsConstructor
 public class UserService {
-    private final static int DEFAULT_PAGE = 0;
-    private final static int MAX_PAGE_SIZE = 10;
+    private static final int DEFAULT_PAGE = 0;
+    private static final int MAX_PAGE_SIZE = 10;
 
     private final UserRepository repository;
 
